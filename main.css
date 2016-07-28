@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+*:focus{
+  outline: none;
+}
+
 @import 'https://fonts.googleapis.com/css?family=Noto+Sans';
 
 body{
@@ -40,4 +44,105 @@ body{
   position:absolute;
   top: 0;
   right: 0;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+input[type="text"]{
+  border-style: none;
+  border-bottom: 1px solid #AAA;
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  height: 32px;
+  width: 220px;
+  font-weight: 400;
+}
+
+input[type="password"]{
+  border-style: none;
+  border-bottom: 1px solid #AAA;
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  height: 32px;
+  width: 220px;
+  font-weight: 400;
+}
+
+.sign-up-button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 220px;
+  height: 32px;
+  border-style: none;
+  border-radius: 2px;
+  background-color: #16A085;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.sign-up-button:hover{
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.40);
+  transition: 0.1s ease;
+}
+.sign-up-button:active{
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+input:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+.loginwith{
+  display: block;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #FFF;
+  text-align: center;
+}
+
+button {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+}
+
+.social-signin.facebook {
+  background-color: #32508E;
+}
+
+.social-signin.twitter {
+  background-color: #55ACEE;
+}
+
+.social-signin.google {
+  background-color: #DD4B39;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
 }
